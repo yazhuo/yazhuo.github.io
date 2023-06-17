@@ -1,12 +1,25 @@
 ---
 layout: page
-permalink: /teaching/
-title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+permalink: /service/
+title: Service
+description: Teaching and Academic Services
 nav: true
 nav_order: 5
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+### External Reviewer
+- USENIX Annual Technical Conference (ATC’21)
+- HotCloud 2020
 
-Organize your courses by years, topics, or universities, however you like!
+### Volunteer
+- 12th Workshop on Large Scale Distributed Systems and Middleware (LADIS)
+
+### Teaching Assistant
+- 2021 Spring CS326 Analysis of Algorithms
+- 2020 Fall CS551 System programming
+- 2020 Spring CS170 Introduction to Computer Science
+- 2018 Fundamentals of Computers
+- 2017 Database
+
+### Lab Instructor
+- 2017 Parallel Algorithms and Programming

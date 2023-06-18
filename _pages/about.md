@@ -9,8 +9,9 @@ profile:
   image: avatar.jpeg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>W302, 201 Dowman Drive</p>
+    <p>400 Dowman Drive, W302</p>
     <p>Atlanta, Georgia, 30322</p>
+    <p>yazhuo.zhang[at]emory.edu</p>
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts

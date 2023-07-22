@@ -7,7 +7,7 @@ subtitle: #<a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 profile:
   align: right
   image: avatar.jpeg
-  image_circular: false # crops the image to make it circular
+  image_circular: False # crops the image to make it circular
   address: >
     <p>400 Dowman Drive, W302</p>
     <p>Atlanta, Georgia, 30322</p>

@@ -270,8 +270,8 @@ display_tags: ['code', 'paper'] # these tags will be displayed on the front page
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Yazhuo]
-  first_name: [Zhang]
+  last_name: Zhang
+  first_name: [Yazhuo]
 
   style: apa
   locale: en

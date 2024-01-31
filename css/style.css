@@ -1,0 +1,34 @@
+.custom-link {
+    color: #ea8b26; 
+    /* text-decoration: underline; */
+}
+
+.custom-link + .custom-link {
+    margin-left: 5px; /* adjust the space as needed */
+}
+
+img.card-img-top {
+    margin-bottom: 10px; /* Adjust the value as needed */
+	width: auto;
+	height: 280px;
+  }
+
+#Banner {
+	/* background-image: url('../assets/img/background3.jpg');  */
+  	background-color: #d37d22; 
+ 	/*height: 15vh;  */
+  	/*background-position: 50% 65%; */
+  	/*background-position: 50% 37%; */
+  	background-position: 50% 40%;
+  	background-repeat: no-repeat; 
+  	background-size: 100%, 100%; 
+  	color: #ffffff;
+}
+
+a {
+	color: #ea8b26;
+  }
+
+a:hover {
+    color: #ea8b26;
+}

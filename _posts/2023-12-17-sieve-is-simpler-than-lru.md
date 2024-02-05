@@ -38,7 +38,10 @@ During a cache miss, SIEVE examines the object pointed by the hand. If it has be
 It continues this process until it encounters an object with the visited bit being 0 and evicts it. After the eviction, the hand points to the next position (the previous object in the queue).
 While an evicted object is in the middle of the queue most of the time, a new object is always inserted into the head of the queue.
 
-![](/blog_images/sieve/sieve_diagram_animation.gif)
+<div style="text-align: center;">
+  <img src="/blog_images/sieve/sieve_diagram_animation.gif" alt="Alt text" title="Optional title" style="margin: auto; display: block;"/>
+</div>
+
 
 
 **SIEVE vs. CLOCK** At first glance, SIEVE is similar to CLOCK/Second Chance/FIFO-Reinsertion - *Note that they are different implementations of the same eviction algorithm*.
@@ -47,7 +50,9 @@ Visited objects are retained (also called "survived") during an eviction. Notabl
 However, the hand in SIEVE moves from the tail to the head over time, whereas the hand in FIFO-Reinsertion stays at the tail. 
 *The key difference is where a retained object is kept.* SIEVE keeps it in the old position, while FIFO-Reinsertion inserts it at the head, together with newly inserted objects.
 
-![](/blog_images/sieve/sieve-diagram.png)
+<div style="text-align: center;">
+  <img src="/blog_images/sieve/sieve-diagram.png" style="margin: auto; display: block;"/>
+</div>
 
 See the [sieve cache implementation code](#sieve-cache-code) at the end of this blog post for a detailed example. 
 
@@ -71,53 +76,62 @@ As a comparison, all other algorithms have smaller reductions on this dataset.
 Compared to advanced algorithms, e.g., ARC, SIEVE reduces
 ARC miss ratio by up to 63.2% with a mean of 1.5%.
 
-![](/blog_images/sieve/efficiency-large.png)
+<div style="text-align: center;">
+  <img src="/blog_images/sieve/efficiency-large.png" style="width: 60%;"/>
+</div>
 
 #### Simplicity
 SIEVE is very simple. We delved into the most popular cache libraries and systems across five diverse programming languages: C++, Go, JavaScript, Python, and Rust. 
 
 Despite the varied ways LRU is implemented across these libraries - some opt for doubly-linked lists, others for arrays - integrating SIEVE was easy. As illustrated in the Table, the required code changes to replace LRU with SIEVE were minimal. In all cases, it took no more than 21 lines of code modifications (tests not included).
 
-| Cache library | Language   | Lines   | Hour of Work   |
+<!-- | Cache library | Language   | Lines   | Hour of Work   |
 | :---------: | :---------: |:---------: | :---------: |
 | [groupcache](https://github.com/cacheMon/groupcache) | Golang  | 21  | <1  |
 | [mnemonist](https://github.com/cacheMon/mnemonist) | Javascript |12  |  1  |
 | [lru-rs](https://github.com/cacheMon/lru-rs) | Rust | 16  |  1  |
-| [lru-dict](https://github.com/cacheMon/lru-dict)| Python + C | 21  | <1  |
+| [lru-dict](https://github.com/cacheMon/lru-dict)| Python + C | 21  | <1  | -->
 
-<!-- <table>
-  <tr>
-    <th style="border: 1px solid black;">Cache library</th>
-    <th style="border: 1px solid black;">Language</th>
-    <th style="border: 1px solid black;">Lines</th>
-    <th style="border: 1px solid black;">Hour of Work</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black;"><a href="https://github.com/cacheMon/groupcache">groupcache</a></td>
-    <td style="border: 1px solid black;">Golang</td>
-    <td style="border: 1px solid black;">21</td>
-    <td style="border: 1px solid black;">&lt;1</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black;"><a href="https://github.com/cacheMon/mnemonist">mnemonist</a></td>
-    <td style="border: 1px solid black;">Javascript</td>
-    <td style="border: 1px solid black;">12</td>
-    <td style="border: 1px solid black;">1</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black;"><a href="https://github.com/cacheMon/lru-rs">lru-rs</a></td>
-    <td style="border: 1px solid black;">Rust</td>
-    <td style="border: 1px solid black;">16</td>
-    <td style="border: 1px solid black;">1</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black;"><a href="https://github.com/cacheMon/lru-dict">lru-dict</a></td>
-    <td style="border: 1px solid black;">Python + C</td>
-    <td style="border: 1px solid black;">21</td>
-    <td style="border: 1px solid black;">&lt;1</td>
-  </tr>
-</table> -->
-<br>
+<table style="text-align: center; margin:auto; border-collapse:collapse; width:50%;">
+    <tr style="font-size: 0.9rem; background-color:white; color:black;">
+        <th style="border:1px solid black; padding:10px; font-weight: bold;">Cache library</th>
+        <th style="border:1px solid black; padding:10px; font-weight: bold;">Language</th>
+        <th style="border:1px solid black; padding:10px; font-weight: bold;">Lines</th>
+        <th style="border:1px solid black; padding:10px; font-weight: bold;">Hour of work</th>
+    </tr>
+    <tr style="font-size: 0.8rem; background-color:white; color:black; text-align:center;">
+        <td style="border:1px solid black; padding:10px;">
+        <a href="https://github.com/cacheMon/groupcache" style="color:#d6723c; text-decoration:none;">groupcache</a>
+        </td>
+        <td style="border:1px solid black; padding:10px;">Golang</td>
+        <td style="border:1px solid black; padding:10px;">21</td>
+        <td style="border:1px solid black; padding:10px;">&lt;1</td>
+    </tr>
+    <tr style="font-size: 0.8rem; background-color:white; color:black; text-align:center;">
+        <td style="border:1px solid black; padding:10px;">
+        <a href="https://github.com/cacheMon/mnemonist" style="color: #d6723c; text-decoration:none;">mnemonist</a>
+        </td>
+        <td style="border:1px solid black; padding:10px;">Javascript</td>
+        <td style="border:1px solid black; padding:10px;">12</td>
+        <td style="border:1px solid black; padding:10px;">1</td>
+    </tr>
+    <tr style="font-size: 0.8rem; background-color:white; color:black; text-align:center;">
+        <td style="border:1px solid black; padding:10px;">
+        <a href="https://github.com/cacheMon/lru-rs" style="color: #d6723c; text-decoration:none;">lru-rs</a>
+        </td>
+        <td style="border:1px solid black; padding:10px;;">Rust</td>
+        <td style="border:1px solid black; padding:10px;;">16</td>
+        <td style="border:1px solid black; padding:10px;">1</td>
+    </tr>
+    <tr style="font-size: 0.8rem; background-color:white; color:black; text-align:center;">
+        <td style="border:1px solid black; padding:10px;">
+        <a href="https://github.com/cacheMon/lru-dict" style="color: #d6723c; text-decoration:none;">lru-dict</a>
+        </td>
+        <td style="border:1px solid black; padding:10px;">Python + C</td>
+        <td style="border:1px solid black; padding:10px;">21</td>
+        <td style="border:1px solid black; padding:10px;">&lt;1</td>
+    </tr>
+</table>
 
 #### Throughput
 Besides efficiency, throughput is the other important metric for caching systems. Although we have implemented SIEVE in five different libraries, we focus on Cachelib's results.
@@ -137,7 +151,9 @@ Compared to SIEVE, LeCaR has much lower efficiency; however, when replacing the 
 TwoQ and ARC achieve efficiency close to SIEVE; however, when replacing the LRU with SIEVE, the efficiency of both algorithms gets boosted.
 These results highlight the potential of SIEVE as a powerful cache primitive for designing advanced cache eviction algorithms.
 
-![](/blog_images/sieve/sieve_queue_all_large.svg)
+<div style="text-align: center;">
+  <img src="/blog_images/sieve/sieve_queue_all_large.svg" style="width: 60%;"/>
+</div>
 
 
 ### SIEVE is not scan-resistant

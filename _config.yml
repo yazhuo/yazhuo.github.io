@@ -1,0 +1,3 @@
+baseurl: "" # Leave this empty if your site is at the root domain.
+url: "https://yazhuozhang.com/" # Your site's base URL.
+permalink: /blog/:year/:month/:day/:title/

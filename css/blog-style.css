@@ -1,0 +1,264 @@
+/* assets/css/blog-style.css */
+
+html, body {
+    height: 100%;
+}
+
+
+body {
+    background-color: white;
+    /* font: 1.1em georgia, times new roman, serif; */
+    text-align: left;
+    hyphens: auto;
+    margin-left: 1em;
+}
+
+blockquote {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    padding-left: 1em;
+    border-left: 1px solid #808080;
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+    font-size: 150%;
+} */
+
+/* h1 {
+    margin-bottom: 1em;
+} */
+
+p {
+    margin: 1em 0;
+}
+
+a {
+    color: #ea8b26;
+}
+
+a:hover {
+    color: #ea8b26;
+}
+
+a:visited {
+    color: #ea8b26;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+
+ul.posts {
+    list-style-type: none;
+    margin-bottom: 2em;
+}
+
+a.posts {
+    color: #0a000a;
+}
+
+ul.posts li {
+    line-height: 2em;
+}
+
+ul.posts span {
+    color: #888484;
+    font-size: 100%;
+}
+
+/*****************************************************************************/
+/*
+/* Publications List
+/*
+/*****************************************************************************/
+
+ul.pubs {
+    margin-bottom: 2em;
+    width: 50em;
+}
+
+ul.pubs li {
+    line-height: 1.5em;
+    margin: 1em;
+}
+
+ul.pubs span {
+    color: #bbb;
+    font-size: 100%;
+}
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+.site {
+    font-size: 100%;
+    width: 80em;
+    margin: 3em auto 2em auto;
+    line-height: 1.6em;
+}
+
+.title {
+    color: #a00;
+    font-weight: bold;
+    margin-bottom: 3em;
+}
+
+.site .title a {
+    color: #00aa00;
+    font-size: 2em;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #BBBBBB;
+}
+
+.site .title a:hover {
+    color: #008800;
+}
+
+.site .title a.extra {
+    color: #aaa;
+    text-decoration: none;
+    margin-left: 1em;
+    font-size: 80%;
+}
+
+.site .title a.extra:hover {
+    color: black;
+}
+
+.site .meta {
+    color: #aaa;
+}
+
+.site .footer {
+    font-size: 80%;
+    color: #555;
+    border-top: 4px solid #eee;
+    margin-top: 2em;
+    overflow: hidden;
+    clear: both;
+}
+
+.site .footer .contact {
+    float: left;
+    margin-right: 3em;
+    width: 45em;
+}
+
+.site .footer .contact a {
+    color: #8085C1;
+}
+
+.site .footer .license {
+    margin-top: 1.1em;
+    margin-right: .2em;
+    width: 25em;
+    float: right;
+}
+
+.site .footer .license img {
+    border: 0;
+}
+
+.site .about {
+    width: 20em;
+    float: right;
+    color: #555;
+}
+
+.site .about h1 {
+    font-size: 110%;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+#post {
+    width: 50em;
+    float: left;
+}
+
+ #post img {
+     width: 540px;
+     padding: 0 0.4em;
+ }
+
+ /* standard */
+
+ #post pre {
+    border: 1px solid #ddd;
+    background-color: #f3f3f3;
+    padding: 0 .4em;
+ }
+
+ #post ul,
+ #post ol {
+     margin-left: 1.35em;
+ }
+
+ #post code {
+     border: 1px solid #ddd;
+     background-color: #f3f3f3;
+     font-size: 100%;
+     padding: 0 .2em;
+ }
+ 
+ #post pre code {
+     border: none;
+ }
+ 
+ /* terminal */
+
+ #post pre.terminal {
+     border: 1px solid black;
+     background-color: #333;
+     color: white;
+ }
+ 
+ #post pre.terminal code {
+     background-color: #333;
+ }
+ 
+ #related {
+     margin-top: 2em;
+     clear: both;
+     width: 45em;
+     float: left;
+ }
+ 
+ #related h2 {
+     margin-bottom: 1em;
+ }
+
+ /* Fix formatting on narrow-screen mobile devices, as suggested by @msjgriffiths on Twitter: https://twitter.com/msjgriffiths/status/1288162056902979585 */
+
+ @media only screen and (max-width: 900px) {
+    .site { 
+        display: flex; 
+        flex-flow: column; 
+        width:100%;
+     }
+     #post {
+         order:1;
+         width:100%;
+         margin-top: -3em;
+     }
+     .about {order: 2; }
+     #related {order: 3;}
+     .footer {order: 4;}
+ }

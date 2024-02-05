@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- font awseome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ site.url }}/css/blog-style.css"> 
+    <link rel="stylesheet" href="{{ site.url }}/css/style.css"> 
+    <title>{{ page.title }}</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar sticky-top navbar-expand-sm navbar-light" style="background-color: #ffffff;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ site.url }}#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ site.url }}#news">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ site.url }}#publications">Publications</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ site.url }}#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ site.url }}#teaching">Teaching</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ site.url }}#aboutme">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ site.url }}/blog/">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        
+          <div class="container-fluid">
+            <div class="row justify-content-center pt-4 pb-4 mb-4" id="Banner">
+              <h1 style="text-shadow:1px 1px #000000;"> <a style="color: #ffffff" href="{{ site.url }}/blog/">Yazhuo's Blog</a></h1>
+            </div>
+          </div>
+    </header>
+
+    <main class="container">
+        {{ content }}
+    </main>
+
+    <!-- <footer>
+        <div class="container">
+            <p>&copy; {{ "now" | date: "%Y" }} {{ site.title }}</p>
+        </div>
+    </footer> -->
+</body>
+</html>

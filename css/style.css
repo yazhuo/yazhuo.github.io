@@ -1,5 +1,5 @@
 .custom-link {
-    color: #ea8b26; 
+    color: #0056b3; 
     /* text-decoration: underline; */
 }
 
@@ -15,7 +15,7 @@ img.card-img-top {
 
 #Banner {
 	/* background-image: url('../assets/img/background3.jpg');  */
-  	background-color: #d37d22; 
+  	background-color: #0056b3; 
  	/*height: 15vh;  */
   	/*background-position: 50% 65%; */
   	/*background-position: 50% 37%; */
@@ -26,9 +26,9 @@ img.card-img-top {
 }
 
 a {
-	color: #ea8b26;
+	color: #0056b3;
   }
 
 a:hover {
-    color: #ea8b26;
+    color: #0056b3;
 }

@@ -28,6 +28,19 @@
       height: 200px;
       background: #aaa;
     }
+    a {
+      color: #3084de; /* A nice, readable blue */
+    }
+
+    a:hover {
+      color: #3084de; /* A darker blue for hover */
+    }
+
+    a.custom-link.fa-twitter,
+    a.custom-link.fa-linkedin,
+    a.custom-link.fa-google-scholar {
+      color: #3084de; /* Our desired blue for social icons */
+    }
   </style>
 
 
@@ -52,7 +65,7 @@
 
 
   <a name="home"></a>
-  <nav class="navbar sticky-top navbar-expand-sm navbar-light" style="background-color: #ffffff;">
+  <nav class="navbar sticky-top navbar-expand-sm navbar-light" style="background-color: #F0F4F8; padding-top: 1rem; padding-bottom: 1rem;">
     <!-- <a class="navbar-brand" href="https://yazhuozhang.com">Yazhuo Zhang</a> -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
@@ -75,7 +88,7 @@
           <a class="nav-link" href="#teaching">Teaching</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#aboutme">About Me</a>
+          <a class="nav-link" href="#life">Life</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/blog/">Blog</a>
@@ -84,18 +97,18 @@
     </div>
   </nav>
 
-  <div class="container-fluid">
-    <div class="row justify-content-center pt-4 pb-4 mb-4" id="Banner">
-      <h1 style="text-shadow:1px 1px #000000"> Yazhuo Zhang</h1>
+  <!-- <div class="container-fluid">
+    <div class="row justify-content-center pt-4 pb-4 mb-4" id="Banner" style="background-color: #4A90E2;">
+      
     </div>
-  </div>
+  </div> -->
 
   <div class="container" style="margin-top:30px">
     <div class="row">
-      <div class="col-sm-3">
-        <img class="card-img-top" src="assets/img/avatar.jpg" alt="Yazhuo Zhang">
+      <div class="col-sm-3" style="margin-top:30px">
+        <img class="card-img-top" src="assets/img/avatar2.jpg" alt="Yazhuo Zhang">
         <br>
-        <a href="mailto:yazzhang@ethz.ch" style="font-size: 16px;"><b>yazzhang@ethz.ch</b></a>
+        <span style="font-size: 28px; color: #3084de; display: inline-block; margin-top: 20px;"><b>Yazhuo Zhang</b></span>
         <br>
 
         <!-- <a target="_blank" href="yazhuo.zhang@emory.edu" class="fa-solid fa-envelope fa-2x custom-link"></a> &nbsp; -->
@@ -107,7 +120,9 @@
         <!-- <a target="_blank" href="https://github.com/yazhuo" class="fa-brands fa-github fa-2x custom-link"></a> &nbsp; -->
       </div>
 
-      <div class="col-sm-9">
+      <div class="col-sm-9" style="margin-top: 16px;">
+        <a name="aboutme_intro" style="display: block; margin-top: -50px; padding-top: 50px;"></a>
+        <h3>About Me</h3>
         <p> I am a postdoctoral researcher in the Department of Computer Science at ETH Zurich, where I am fortunate to work with Dr. <a href="https://anakli.inf.ethz.ch/">Ana Klimović</a>
           as part of the <a href="https://systems.ethz.ch/"> Systems Group</a>.
         </p>
@@ -119,14 +134,7 @@
         <p> I completed my Ph.D. in the Computer Science Department at Emory University, advised by Dr. <a target="_blank" href="https://ymsir.com/index.html">Ymir Vigfusson</a>.
           My dissertation was on conducting data-driven performance modeling in complex networked systems.
         </p>
-
-        <!-- <p>I have three main research interests right now:</p>
-        <ul>
-          <li>Caching Systems: workload characterization and theoritical study</li>
-          <li>Serverless Computing: cluster management and programming model.</li>
-          <li>Content Delivery  Network (CDN): simulation and performance improvement</li>
-        </ul> -->
-
+        
         <p>
           <b>If you're interested in my research or just want to chat, feel free to reach out (<a href="mailto:yazzhang@ethz.ch">yazzhang@ethz.ch</a>). I'm always happy to help and connect.</b>
         </p>
@@ -148,10 +156,10 @@
           <li>04/2024 - SIEVE received the community award at NSDI'24!</li>
           <li>03/2024 - Defended my dissertation!</li>
           <li>02/2024 - <a target="_blank" href="https://sievecache.com">SIEVE</a> is highlighted in the <a target="_blank"  href="https://news.emory.edu/stories/2024/01/esc_cache_sifting_22-01-2024/story.html">Emory news</a> and <a href="https://www.livescience.com/technology/communications/remarkable-sieve-algorithm-speed-up-web-browsing-google-meta-interested">Live Science</a>!</li>
-          <!-- <li>09/2023 - Our paper “LatenSeer: Causal Modeling of End-to-End Latency Distribution by Harnessing Distributed Tracing” was accepted to <a target="_blank" href="https://acmsocc.org/2023/index.html">SoCC'23</a>.</li>
-          <li>07/2023 - Our paper “SIEVE: Simple and Efficient Eviction Policy for Turn-key Web Cache Replacement” was accepted to <a target="_blank" href="https://www.usenix.org/conference/nsdi24">NSDI'24</a>.</li>
-          <li>07/2023 - Our paper “FIFO queues are all you need for cache eviction” was accepted to <a target="_blank" href="https://sosp2023.mpi-sws.org/cfp.html">SOSP'23</a>.</li>
-          <li>04/2023 - The collaboration work on “FIFO can be Better than LRU: the Power of Lazy Promotion and Quick Demotion” was accepted to <a target="_blank" href="https://sigops.org/s/conferences/hotos/2023/program.html">HotOSXIX</a>.</li>
+          <!-- <li>09/2023 - Our paper "LatenSeer: Causal Modeling of End-to-End Latency Distribution by Harnessing Distributed Tracing" was accepted to <a target="_blank" href="https://acmsocc.org/2023/index.html">SoCC'23</a>.</li>
+          <li>07/2023 - Our paper "SIEVE: Simple and Efficient Eviction Policy for Turn-key Web Cache Replacement" was accepted to <a target="_blank" href="https://www.usenix.org/conference/nsdi24">NSDI'24</a>.</li>
+          <li>07/2023 - Our paper "FIFO queues are all you need for cache eviction" was accepted to <a target="_blank" href="https://sosp2023.mpi-sws.org/cfp.html">SOSP'23</a>.</li>
+          <li>04/2023 - The collaboration work on "FIFO can be Better than LRU: the Power of Lazy Promotion and Quick Demotion" was accepted to <a target="_blank" href="https://sigops.org/s/conferences/hotos/2023/program.html">HotOSXIX</a>.</li>
           <li>04/2022 - Become a PhD candidate! </li> -->
         </ul>
         
@@ -204,6 +212,8 @@
         </a>
         <ul style="padding-left: 15px;">
           <p>
+            <li> SESMAE'25: Program Committee </li>
+            <li> ICDCS'25: External Reviewer </li>
             <li> ATC'24: Artifact Evaluation Committee</li>
             <li> OSDI'24: Artifact Evaluation Committee</li>
             <li> Eurosys'24: External reviewer </li>
@@ -219,6 +229,7 @@
         </a>
         <ul style="padding-left: 15px;">
           <p>
+            <li> 2025 Spring Cloud Computing Architecture </li>
             <li> 2021 Spring CS326 Analysis of Algorithms </li>
             <li> 2020 Fall CS551 System programming </li>
             <li> 2020 Spring CS170 Introduction to Computer Science </li>
@@ -229,11 +240,10 @@
         </ul>
         <br>
 
-        <a name="aboutme" style="display: block; margin-top: -50px; padding-top: 50px;"></a>
-          <h3>About Me</h3>
-          <p>Daydreaming, psychology, running, travel, ... </p>
+        <a name="life" style="display: block; margin-top: -50px; padding-top: 50px;"></a>
+          <h3>Life</h3>
+          <p>Piano, tennis, running, travel, ... </p>
         </a>
-
       </div>
     </div>
 
@@ -242,7 +252,7 @@
   </div>
 
   <div class="page-footer font-small blue text-center" style="margin-bottom:0">
-    <p> <span class="text-muted">Yazhuo Zhang. 2019-2024 @ Atlanta</span> </p>
+    <p> <span class="text-muted">Yazhuo Zhang. 2019-2025 @ Zurich</span> </p>
   </div>
 
 

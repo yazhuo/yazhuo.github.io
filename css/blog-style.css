@@ -34,15 +34,15 @@ p {
 }
 
 a {
-    color: #ea8b26;
+    color: #0056b3;
 }
 
 a:hover {
-    color: #ea8b26;
+    color: #003d80;
 }
 
 a:visited {
-    color: #ea8b26;
+    color: #0056b3;
 }
 
 table {
@@ -109,20 +109,20 @@ ul.pubs span {
 }
 
 .title {
-    color: #a00;
+    color: #343a40;
     font-weight: bold;
     margin-bottom: 3em;
 }
 
 .site .title a {
-    color: #00aa00;
+    color: #4A90E2;
     font-size: 2em;
     text-decoration: none;
     text-shadow: 1px 1px 2px #BBBBBB;
 }
 
 .site .title a:hover {
-    color: #008800;
+    color: #0056b3;
 }
 
 .site .title a.extra {
@@ -156,7 +156,7 @@ ul.pubs span {
 }
 
 .site .footer .contact a {
-    color: #8085C1;
+    color: #0056b3;
 }
 
 .site .footer .license {

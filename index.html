@@ -1,74 +1,22 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yazhuo Zhang, systems researcher and postdoctoral researcher at ETH Zurich. Distributed systems, AI infrastructure, LLM serving, reliability, and caching.">
+  <meta name="author" content="Yazhuo Zhang">
+  <title>Yazhuo Zhang — Systems Researcher</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <!-- font awseome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="css/style.css">
-
-
-  <meta name="description" content="Yazhuo Zhang" />
-  <meta name="keywords" content="Yazhuo, Zhang, personal website" />
-  <meta http-equiv="author" content="Yazhuo Zhang" />
-
+  <link rel="stylesheet" href="/css/style.css">
   <script src="https://kit.fontawesome.com/d2f19fecef.js" crossorigin="anonymous"></script>
-
-  <style>
-    .fakeimg {
-      height: 200px;
-      background: #aaa;
-    }
-    a {
-      color: #3084de; /* A nice, readable blue */
-    }
-
-    a:hover {
-      color: #3084de; /* A darker blue for hover */
-    }
-
-    a.custom-link.fa-twitter,
-    a.custom-link.fa-linkedin,
-    a.custom-link.fa-google-scholar {
-      color: #3084de; /* Our desired blue for social icons */
-    }
-  </style>
-
-
-  <title>Yazhuo Zhang's website</title>
 </head>
-
-
-<body>
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-
-
-  <a name="home"></a>
-  <nav class="navbar sticky-top navbar-expand-sm navbar-light" style="background-color: #F0F4F8; padding-top: 1rem; padding-bottom: 1rem;">
+<body class="homepage" id="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <nav aria-label="Main navigation" class="navbar sticky-top navbar-expand-sm navbar-light" style="background-color: #F0F4F8; padding-top: 1rem; padding-bottom: 1rem;">
     <div class="container">
       <a class="navbar-brand" href="#home" style="color: #3084de; font-weight: bold; font-size: 30px;">Yazhuo Zhang</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -77,7 +25,7 @@
             <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#news">News</a>
+            <a class="nav-link" href="#research">Research</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#publications">Publications</a>
@@ -98,86 +46,70 @@
       </div>
     </div>
   </nav>
-
-  <!-- <div class="container-fluid">
-    <div class="row justify-content-center pt-4 pb-4 mb-4" id="Banner" style="background-color: #4A90E2;">
-      
-    </div>
-  </div> -->
-
-  <div class="container" style="margin-top:30px">
-    <div class="row">
-      <div class="col-sm-3" style="margin-top:50px">
-        <img class="card-img-top" src="assets/img/avatar2.jpg" alt="Yazhuo Zhang" ">
-        <br>
-        <!-- <a target="_blank" href="yazhuo.zhang@emory.edu" class="fa-solid fa-envelope fa-2x custom-link"></a> &nbsp; -->
-        <a target="_blank" href="https://twitter.com/Yazhuo11" class="fa-brands fa-twitter custom-link" style="font-size: 1.5em;"></a> &nbsp;
-        <a target="_blank" href="https://www.linkedin.com/in/yazhuo-zhang-80833b15b" class="fa-brands fa-linkedin custom-link" style="font-size: 1.5em;"></a>
-        &nbsp;
-        <a target="_blank" href="https://scholar.google.com/citations?user=NXRtOt4AAAAJ&hl=en" class="fa-brands fa-google-scholar fa-2x custom-link" style="font-size: 1.5em;"></a> &nbsp;
-        <a target="_blank" href="assets/files/CV.pdf" style="font-size: 24px;;"><b>CV</b></a>
-        <!-- <a target="_blank" href="https://github.com/yazhuo" class="fa-brands fa-github fa-2x custom-link"></a> &nbsp; -->
+  <main class="container" id="main">
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="profile">
+        <img class="profile-photo" src="/assets/img/avatar2.jpg" alt="Yazhuo Zhang">
+        <div class="profile-links" aria-label="Profile links">
+          <a href="mailto:yazzhang@ethz.ch" aria-label="Email yazzhang@ethz.ch" title="Email: yazzhang@ethz.ch"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/yazhuo-zhang-80833b15b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://scholar.google.com/citations?user=NXRtOt4AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar"><i class="fa-brands fa-google-scholar" aria-hidden="true"></i></a>
+          <a href="/assets/files/CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="Curriculum vitae"><b>CV</b></a>
+        </div>
       </div>
-
-      <div class="col-sm-9" style="margin-top: 16px;">
-        <a name="aboutme_intro" style="display: block; margin-top: -50px; padding-top: 50px;"></a>
-        <h3>About Me</h3>
-        <p> I am a postdoctoral researcher in the Department of Computer Science at ETH Zurich, where I am fortunate to work with Dr. <a href="https://anakli.inf.ethz.ch/">Ana Klimović</a>
-          as part of the <a href="https://systems.ethz.ch/"> Systems Group</a>.
-        </p>
-
-        <p> My research interests span storage systems, cloud systems, and data-center applications. 
-          The goal of my research is to improve the performance and resource efficiency of large-scale distributed systems.
-        </p>
-
-        <p> I completed my Ph.D. in the Computer Science Department at Emory University, advised by Dr. <a target="_blank" href="https://ymsir.com/index.html">Ymir Vigfusson</a>.
-          My dissertation was on conducting data-driven performance modeling in complex networked systems.
-        </p>
-        
-        <p>
-          <b>If you're interested in my research or just want to chat, feel free to reach out (<a href="mailto:yazzhang@ethz.ch">yazzhang@ethz.ch</a>). I'm always happy to help and connect.</b>
-        </p>
-
-  
-        <!-- <p>Previously, I was fortunate to work with <a href="https://www.linkedin.com/in/yaoyue-thinkingfish/">Yao Yue</a> 
-          and <a href="https://www.linkedin.com/in/rebecca-isaacs-5557518/">Rebecca Isaacs</a> at Twitter on performance measurement, 
-          <a href="https://www.cs.cmu.edu/~rvinayak/">Rashmi Vinayak</a> at CMU on web caches. 
-          I'm also colloborating with <a href="https://www.linkedin.com/in/virtualirfan/">Irfan Ahmad</a> at Magnition on content delivery networks.</p> -->
-        
-        <!-- <p><b>I'm always happy chat, shot me a message.</b></p> -->
+      <div class="intro-copy" id="aboutme">
+        <span id="aboutme_intro" class="anchor-alias" aria-hidden="true"></span>
+        <h1 id="intro-title">About Me</h1>
+        <p>I am a postdoctoral researcher in the <a href="https://systems.ethz.ch/">Systems Group at ETH Zurich</a>, where I am fortunate to work with Dr. <a href="https://anakli.inf.ethz.ch/">Ana Klimović</a>. I received my Ph.D. in Computer Science from Emory University, advised by Dr. <a href="https://ymsir.com/index.html">Ymir Vigfusson</a>.</p>
+        <p>My research aims to make distributed systems more efficient and reliable, with a focus on caching, performance diagnosis, and cloud infrastructure. I investigate how these systems respond to changing workloads and failures, from controlling retries in microservices to diagnosing LLM serving failures and adapting web caches to AI-generated traffic.</p>
+        <p class="job-market">I am looking for research and engineering opportunities in industry, particularly in distributed systems and AI infrastructure.</p>
       </div>
+    </section>
 
-      <div class="col-sm-12"  style="margin-top:30px">
-        <a name="news" style="display: block; margin-top: -50px; padding-top: 50px;"></a>
-        <h3>News</h3>
-        <ul style="padding-left: 16px;">
-          <li>07/2026 - Our paper on <i>It's Time to Retry: Taming Retry Storms by Treating Retry Capacity as a Shared Resource</i> has been accepted to NSDI'27. </li>
-          <li>03/2026 - I gave an invited talk on resilient distributed systems at Snowflake in Berlin. </li>
-          <li>10/2025 - I will attend SOSP'25 in Seoul. See you there! :)</li>
-          <li>09/2025 - Our vision paper on <i>Rethinking Web Cache Design for the AI Era</i> has been accepted to SoCC'25.</li>
-          <li>05/2024 - I will be joining ETH Zürich for a post-doc in July :-)</li>
-          <li>04/2024 - SIEVE received the community award at NSDI'24!</li>
-          <li>03/2024 - Defended my dissertation!</li>
-          <li>02/2024 - <a target="_blank" href="https://sievecache.com">SIEVE</a> is highlighted in the <a target="_blank"  href="https://news.emory.edu/stories/2024/01/esc_cache_sifting_22-01-2024/story.html">Emory news</a> and <a href="https://www.livescience.com/technology/communications/remarkable-sieve-algorithm-speed-up-web-browsing-google-meta-interested">Live Science</a>!</li>
-          <!-- <li>09/2023 - Our paper "LatenSeer: Causal Modeling of End-to-End Latency Distribution by Harnessing Distributed Tracing" was accepted to <a target="_blank" href="https://acmsocc.org/2023/index.html">SoCC'23</a>.</li>
-          <li>07/2023 - Our paper "SIEVE: Simple and Efficient Eviction Policy for Turn-key Web Cache Replacement" was accepted to <a target="_blank" href="https://www.usenix.org/conference/nsdi24">NSDI'24</a>.</li>
-          <li>07/2023 - Our paper "FIFO queues are all you need for cache eviction" was accepted to <a target="_blank" href="https://sosp2023.mpi-sws.org/cfp.html">SOSP'23</a>.</li>
-          <li>04/2023 - The collaboration work on "FIFO can be Better than LRU: the Power of Lazy Promotion and Quick Demotion" was accepted to <a target="_blank" href="https://sigops.org/s/conferences/hotos/2023/program.html">HotOSXIX</a>.</li>
-          <li>04/2022 - Become a PhD candidate! </li> -->
-        </ul>
-        
-        <a name="publications" style="display: block; margin-top: -50px; padding-top: 50px;"></a>
-        <h3>Publications</h3>
-        <p style="font-size: 0.85em; margin: 5px 0;">(* == equal contribution)</p>
-        <ul style="padding-left: 0px;">
+    <section class="home-section" id="research" aria-labelledby="research-title">
+      <h2 id="research-title">Research Focus</h2>
+      <ul class="research-list">
+        <li><strong>AI Serving &amp; Model Deployment</strong> <span class="research-status">(ongoing)</span>
+          <ul>
+            <li>Model onboarding, serving correctness, and hardware/runtime compatibility</li>
+            <li>Agent-assisted diagnosis, repair, and optimization of LLM deployments</li>
+          </ul>
+        </li>
+        <li><strong>Reliable Distributed Systems &amp; Performance Diagnosis</strong>
+          <ul>
+            <li>Retry admission and control in service meshes; retry storms and metastable failures [<a href="assets/publication/nsdi27-retry.pdf">NSDI’27</a>]</li>
+            <li>Distributed tracing and causal modeling of end-to-end latency [<a href="https://dl.acm.org/doi/10.1145/3620678.3624787">SoCC’23</a>]</li>
+            <li>Elastic cloud infrastructure, scheduling, and sandboxed execution [<a href="https://dl.acm.org/doi/10.1145/3731569.3764803">SOSP’25</a>]</li>
+          </ul>
+        </li>
+        <li><strong>Caching &amp; Data Infrastructure</strong>
+          <ul>
+            <li>Simple, efficient cache eviction [<a href="https://sievecache.com">NSDI’24</a> <span role="img" aria-label="Community Award" title="NSDI 2024 Community Award">🏆</span>] [<a href="https://s3fifo.com">SOSP’23</a>] [<a href="https://dl.acm.org/doi/10.1145/3593856.3595887">HotOS’23</a>]</li>
+            <li>Workload characterization and web cache design for AI-generated traffic [<a href="https://dl.acm.org/doi/abs/10.1145/3772052.3772255">SoCC’25</a>]</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="home-section" id="publications" aria-labelledby="publications-title">
+      <h2 id="publications-title">Publications</h2>
+      <p class="publication-note">(* == equal contribution)</p>
+      <div class="publication-list">
           <p>
+            [<b>NSDI</b>]<a target="_blank" rel="noopener noreferrer" href="assets/publication/nsdi27-retry.pdf"> <b>It’s Time to Retry: Taming Retry Storms by Treating Retry Capacity as a Shared Resource</b></a>
+            <br>
+            <b>Yazhuo Zhang</b>, Giuseppe Steduto, Luca Renna, Ana Klimovic<br>
+            <i>USENIX Symposium on Networked Systems Design and Implementation</i> (NSDI), 2027. Accepted.<br>
+            [<a target="_blank" rel="noopener noreferrer" href="https://github.com/eth-easl/Arolla">code</a>]
+          </p>
+<p>
             [<b>SoCC</b>]<a target="_blank" href="https://dl.acm.org/doi/abs/10.1145/3772052.3772255"> <b>Rethinking Web Cache Design for the AI Era </b>
             </a>
             <br>
             <b>Yazhuo Zhang</b>, Jinqing Cai, Avani Wildani, Ana Klimovic<br>
             <i> The 16th edition of the annual ACM Symposium on Cloud Computing (SoCC), 2025. </i><br>
           </p>
-          <p>
+<p>
             [<b>SOSP</b>]<a target="_blank" href="https://dl.acm.org/doi/10.1145/3731569.3764803"> <b>Unlocking True Elasticity for the Cloud-Native Era with Dandelion</b>
             </a>
             <br>
@@ -185,103 +117,86 @@
             <i> The 31th ACM Symposium on Operating Systems Principles (SOSP), 2025 </i><br>
             [<a target="_blank" href="https://github.com/eth-easl/dandelion">code</a>]
           </p>
-          <p>
+<p>
             [<b>NSDI</b>]<a target="_blank" href="https://www.usenix.org/conference/nsdi24/presentation/zhang-yazhuo"> <b>SIEVE is Simpler than LRU: an Efficient Turn-Key Eviction Algorithm for Web Caches</b>
             </a>
             <br>
             <b>Yazhuo Zhang*</b>, Juncheng Yang*, Yao Yue, Ymir Vigfusson, K. V. Rashmi. <br>
-            <i> 21st USENIX Symposium on Networked Systems Design and Implementation </i> (NSDI), 2024<nobr><br>
-            [<a target="_blank" href="https://sievecache.com">website</a>][<a target="_blank" href="https://cachemon.github.io/SIEVE-website/blog/2023/12/17/sieve-is-simpler-than-lru/">blog</a>][<a target="_blank" href="assets/publication/nsdi24-sieve.pdf">pdf</a>]
+            <i> 21st USENIX Symposium on Networked Systems Design and Implementation </i> (NSDI), 2024<br>
+            [<a target="_blank" href="https://sievecache.com">website</a>][<a target="_blank" href="https://cachemon.github.io/SIEVE-website/blog/2023/12/17/sieve-is-simpler-than-lru/">blog</a>]
             <br><span style="color: #e38736;"><b>&#127942; Community Award</b></span>
           </p>
-          <p>
+<p>
             [<b>SoCC</b>]<a target="_blank" href="https://dl.acm.org/doi/10.1145/3620678.3624787"> <b>LatenSeer: Causal Modeling of End-to-End Latency Distributions by Harnessing Distributed Tracing</b>
             </a>
             <br>
             <b>Yazhuo Zhang</b>, Rebecca Isaacs, Yao Yue, Juncheng Yang, Lei Zhang, Ymir Vigfusson<br>
-            <i> The 14th ACM Symposium on Cloud Computing </i> (SoCC), 2023<nobr><br>
-            [<a target="_blank" href="assets/publication/socc23-latenseer.pdf">pdf</a>]
+            <i> The 14th ACM Symposium on Cloud Computing </i> (SoCC), 2023<br>
             [<a target="_blank" href="https://github.com/yazhuo/LatenSeer">code</a>]
           </p>
-          <p>
+<p>
             [<b>SOSP</b>]<a target="_blank" href="https://dl.acm.org/doi/10.1145/3600006.3613147"> <b>FIFO queues are all you need for cache eviction</b>
             </a>
             <br>
             Juncheng Yang, <b>Yazhuo Zhang</b>, Ziyue Qiu, Yao Yue, K. V. Rashmi. <br>
-            <i> The 29th ACM Symposium on Operating Systems Principles </i> (SOSP), 2023<nobr><br>
+            <i> The 29th ACM Symposium on Operating Systems Principles </i> (SOSP), 2023<br>
             [<a target="_blank" href="https://s3fifo.com">website</a>][<a target="_blank"
-              href="https://blog.s3fifo.com">blog</a>][<a target="_blank" href="assets/publication/sosp23-s3fifo.pdf">pdf</a>][<a target="_blank"
-              target="_blank" href="assets/slides/sosp23-s3fifo.pdf">slides</a>][<a
+              href="https://blog.s3fifo.com">blog</a>][<a target="_blank" href="assets/slides/sosp23-s3fifo.pdf">slides</a>][<a
               href="https://youtu.be/5T2dHj0eHC0">video</a>]
           </p>
-
-          <p>
+<p>
             [<b>HotOS</b>]<a target="_blank" href="https://dl.acm.org/doi/10.1145/3593856.3595887"> <b>FIFO Can be Better than LRU: the
               Power of Lazy
               Promotion and Quick Demotion</b> </a>
             <br>
             Juncheng Yang, Ziyue Qiu, <b>Yazhuo Zhang</b>, Yao Yue, K. V. Rashmi. <br>
-            <i> The 19th Workshop on Hot Topics in Operating Systems </i> (HotOS), 2023<nobr><br>
-            [<a target="_blank" href="assets/publication/hotos23-qdlp.pdf">pdf</a>][<a target="_blank"
+            <i> The 19th Workshop on Hot Topics in Operating Systems </i> (HotOS), 2023<br>
+            [<a target="_blank"
               href="assets/slides/hotos23-qdlp.pdf">slides</a>]
           </p>
-
-          <a name="services" style="display: block; margin-top: -50px; padding-top: 50px;"></a>
-          <h3>Services</h3>
-        </a>
-        <ul style="padding-left: 15px;">
-          <p>
-            <li> ACM Transactions on Storage (TOS) 2025: Reviewer</li>
-            <li> SESMAE'25: Program Committee </li>
-            <li> ICDCS'25: External Reviewer </li>
-            <li> ATC'24: Artifact Evaluation Committee</li>
-            <li> OSDI'24: Artifact Evaluation Committee</li>
-            <li> Eurosys'24: External reviewer </li>
-            <li> ATC'21: External reviewer </li>
-            <li> HotCloud'20: External reviewer</li>
-            <li> LADIS'21: Volunteer </li>
-          </p>
-        </ul>
-
-
-        <a name="teaching" style="display: block; margin-top: -50px; padding-top: 50px;"></a>
-          <h3>Teaching</h3>
-        </a>
-        <ul style="padding-left: 15px;">
-          <p>
-            <li> 2025 Spring Cloud Computing Architecture </li>
-            <li> 2021 Spring CS326 Analysis of Algorithms </li>
-            <li> 2020 Fall CS551 System programming </li>
-            <li> 2020 Spring CS170 Introduction to Computer Science </li>
-            <li> 2018 Fundamentals of Computers </li>
-            <li> 2017 Database </li>
-            <li> 2017 Parallel Algorithms and Programming </li>
-          </p>
-        </ul>
-        <br>
-
-        <a name="life" style="display: block; margin-top: -50px; padding-top: 50px;"></a>
-          <h3>Life</h3>
-          <p>Piano, tennis, running, travel, ... </p>
-        </a>
       </div>
-    </div>
+    </section>
 
-  </div>
-  </div>
-  </div>
+    <section class="home-section" id="services" aria-labelledby="services-title">
+      <h2 id="services-title">Services</h2>
+      <ul class="academic-list">
+        <li> ACM Transactions on Storage (TOS) 2025: Reviewer</li>
+        <li> SESMAE'25: Program Committee </li>
+        <li> ICDCS'25: External Reviewer </li>
+        <li> ATC'24: Artifact Evaluation Committee</li>
+        <li> OSDI'24: Artifact Evaluation Committee</li>
+        <li> Eurosys'24: External reviewer </li>
+        <li> ATC'21: External reviewer </li>
+        <li> HotCloud'20: External reviewer</li>
+        <li> LADIS'21: Volunteer </li>
+      </ul>
+    </section>
 
-  <div class="page-footer font-small blue text-center" style="margin-bottom:0">
-    <p> <span class="text-muted">Yazhuo Zhang. 2019-2025 @ Zurich</span> </p>
-  </div>
+    <section class="home-section" id="teaching" aria-labelledby="teaching-title">
+      <h2 id="teaching-title">Teaching</h2>
+      <ul class="academic-list">
+        <li> 2025 Spring Cloud Computing Architecture </li>
+        <li> 2021 Spring CS326 Analysis of Algorithms </li>
+        <li> 2020 Fall CS551 System programming </li>
+        <li> 2020 Spring CS170 Introduction to Computer Science </li>
+        <li> 2018 Fundamentals of Computers </li>
+        <li> 2017 Database </li>
+        <li> 2017 Parallel Algorithms and Programming </li>
+      </ul>
+    </section>
 
-
+    <section class="home-section" id="life" aria-labelledby="life-title">
+      <h2 id="life-title">Life</h2>
+      <p>Outside research, I enjoy playing piano, tennis, swimming, running, exploring new places, and interior design.</p>
+    </section>
+  </main>
+  <footer class="home-footer container">Yazhuo Zhang · Zurich</footer>
   <!-- Default Statcounter code for yazhuozhang.com
   https://yazhuozhang.com/ -->
   <script type="text/javascript">
-  var sc_project=12909980; 
-  var sc_invisible=1; 
-  var sc_security="3aec284c"; 
+  var sc_project=12909980;
+  var sc_invisible=1;
+  var sc_security="3aec284c";
   </script>
   <script type="text/javascript"
   src="https://www.statcounter.com/counter/counter.js"
@@ -293,9 +208,14 @@
   alt="Web Analytics"
   referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
   <!-- End of Statcounter Code -->
-
-
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
-
 </html>

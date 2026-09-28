@@ -1,5 +1,5 @@
 .custom-link {
-    color: #0056b3; 
+    color: #0056b3;
     /* text-decoration: underline; */
 }
 
@@ -9,26 +9,76 @@
 
 img.card-img-top {
     margin-bottom: 10px; /* Adjust the value as needed */
-	width: auto;
-	height: 280px;
+    width: auto;
+    height: 280px;
   }
 
 #Banner {
-	/* background-image: url('../assets/img/background3.jpg');  */
-  	background-color: #0056b3; 
- 	/*height: 15vh;  */
-  	/*background-position: 50% 65%; */
-  	/*background-position: 50% 37%; */
-  	background-position: 50% 40%;
-  	background-repeat: no-repeat; 
-  	background-size: 100%, 100%; 
-  	color: #ffffff;
+    /* background-image: url('../assets/img/background3.jpg');  */
+    background-color: #0056b3;
+    /*height: 15vh;  */
+    /*background-position: 50% 65%; */
+    /*background-position: 50% 37%; */
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+    color: #ffffff;
 }
 
 a {
-	color: #0056b3;
+    color: #0056b3;
   }
 
 a:hover {
     color: #0056b3;
+}
+
+/* Shared navigation uses the original homepage palette. */
+.site-nav { background: #F0F4F8; padding: 1rem 0; }
+.nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem 2rem; flex-wrap: wrap; }
+.site-name { color: #3084de; font-size: 30px; font-weight: bold; line-height: 1.2; }
+.site-nav-links { display: flex; flex-wrap: wrap; gap: .5rem 1rem; list-style: none; margin: 0; padding: 0; }
+.site-nav-links a { color: rgba(0, 0, 0, .5); }
+.site-nav-links a:hover { color: rgba(0, 0, 0, .7); }
+a:focus-visible { outline: 2px solid #3084de; outline-offset: 4px; }
+
+/* Keep Bootstrap's original typography and container sizes. */
+.homepage { color: #212529; background: #fff; }
+.homepage a, .homepage a:hover { color: #3084de; }
+.homepage .site-nav-links a { color: rgba(0, 0, 0, .5); }
+.homepage .site-nav-links a:hover { color: rgba(0, 0, 0, .7); }
+.homepage h1, .homepage h2 { font-size: 1.75rem; font-weight: 500; line-height: 1.2; margin-bottom: .5rem; }
+.homepage [id] { scroll-margin-top: 100px; }
+.skip-link { position: absolute; top: -100px; left: 1rem; background: #fff; padding: .5rem 1rem; z-index: 10; }
+.skip-link:focus { top: .5rem; }
+.intro { display: grid; grid-template-columns: 23% minmax(0, 1fr); gap: 2rem; align-items: start; padding-top: 3rem; }
+.profile { margin-top: 2rem; }
+.profile-photo { display: block; max-width: 100%; width: auto; height: 280px; object-fit: contain; }
+.profile-links { display: flex; align-items: center; flex-wrap: wrap; gap: .35rem 1rem; margin-top: .75rem; font-size: 1.5rem; }
+.intro-copy p { margin-bottom: 1rem; }
+.intro-copy p:last-child { margin-bottom: 0; }
+.job-market { border-left: 3px solid #3084de; padding: .6rem 1rem; background: #F0F4F8; font-size: 1rem; }
+.contact { font-size: .95rem; }
+.home-section { margin-top: 2rem; }
+#research { margin-top: 1rem; }
+.research-list { padding-left: 1.25rem; margin-top: 1rem; }
+.research-list > li { margin-bottom: .85rem; }
+.research-list ul { padding-left: 1.25rem; margin-top: .3rem; }
+.research-list ul li { margin-bottom: .2rem; }
+.research-status { color: #6c757d; font-size: .9rem; }
+.publication-note { font-size: .85em; margin: 5px 0; }
+.publication-list p { margin-top: 0; margin-bottom: 1rem; }
+.academic-list { padding-left: 15px; }
+.home-footer { padding-top: 2rem; padding-bottom: 1rem; color: #6c757d; text-align: center; }
+
+@media (max-width: 767px) {
+    .intro { grid-template-columns: 150px minmax(0, 1fr); gap: 1.5rem; }
+    .profile-photo { height: auto; }
+}
+@media (max-width: 575px) {
+    .site-nav-links { gap: .4rem 1rem; font-size: .9rem; }
+    .intro { grid-template-columns: 1fr; padding-top: 2rem; }
+    .profile { max-width: 190px; margin-top: 0; }
+    .profile-photo { width: 150px; }
+    .contact a { overflow-wrap: anywhere; }
 }

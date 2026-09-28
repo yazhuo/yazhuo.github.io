@@ -9,7 +9,7 @@ title: SIEVE is simpler than LRU
 Caching is a method of storing temporary data for quick access to keep the online world running smoothly. But with limited space comes a critical decision: what to keep and discard. This is where **eviction algorithms** come into play. Our team recently designed a new cache eviction algorithm called **SIEVE**: it is very effective and simple with just one queue.
 
 - [Website](https://sievecache.com) 
-- [Paper](https://yazhuozhang.com/assets/pdf/nsdi24-sieve.pdf)
+- [Paper](/assets/publication/nsdi24-sieve.pdf)
 
 ***Updates***: *The original writing style attracted considerable attention. We have updated the blog post for greater clarity and straightforwardness.* We also include an easy-to-reproduce result at [https://observablehq.com/@1a1a11a/sieve-miss-ratio-plots](https://observablehq.com/@1a1a11a/sieve-miss-ratio-plots). 
 
@@ -182,6 +182,8 @@ As we wrap up this blog post, we would like to give a big shoutout to the people
 **If you have questions or thoughts or have given SIEVE a try, we're eager to hear from you! Don't hesitate to get in touch :-)**
 
 ## Appendix
+
+<a id="sieve-cache-code"></a>
 
 ```python
 class Node:
